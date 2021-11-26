@@ -15,6 +15,6 @@
   teste com "hostname"<br/>
   apos desloge e reloge.<br/>
   <br/>
-  # atividade configuração de ips.<br/>
+  # Atividade configuração de ips.<br/>
   <br/>
   
