@@ -29,12 +29,29 @@ Listar as interfaces de rede reconhecidas pelo sistema operacional
   "ip link" co
   "ip -br -c link"
   
-##Saber ativar ou desativar uma interface de rede
+## Saber ativar ou desativar uma interface de rede
   "sudo ip link set -interface- up" sobe a iterface
   "sudo ip link set -interface- down" deruba a iterface
   
   
-Configurar uma interface de rede com endereço IP dinâmico (DHCP) ou estático
+## Configurar uma interface de rede com endereço IP dinâmico (DHCP) ou estático
+1. edite "sudo nano /etc/netplan/00-installer-config.yaml"
+  
+  No nano, CTRL+K apaga a linha atual
+  
+2. Salvar o arquivo
+  
+netplan apply
+ip -br -4 a
+  
+ip dinamico:
+ethernets:
+  enp0s8:
+    dhcp4: true
+  ip statc:
+  
+  
+  
 Configurar máscara de sub rede
 Configurar endereço(s) IP de servidor(es) DNS a serem consultados
 Configurar endereço IP do roteador padrão
