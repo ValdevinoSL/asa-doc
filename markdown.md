@@ -13,8 +13,14 @@
   "hostnamectl set-hostname .novo nome do pc" mudar o nome do pc<br/>
   apos altere o arquivo "sudo nano /etc/hosts" onde estiver o antigo nome colocar o novo.<br/>
   teste com "hostname"<br/>
-  apos desloge e reloge.<br/>
-  <br/>
-  # Atividade configuração de ips.<br/>
-  <br/>
+  apos desloge e reloge<br?>
+  
+  outra maneira
+  
+  sed 's/NOME-VELHO/NOME-NOVO/'  /etc/hosts
+Para valer
+sudo sed -i 's/NOME-VELHO/NOME-NOVO/'  /etc/hosts
+  
+  # Atividade troca de ips
+  
   
