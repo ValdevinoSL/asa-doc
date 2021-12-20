@@ -44,11 +44,17 @@ Listar as interfaces de rede reconhecidas pelo sistema operacional
 netplan apply
 ip -br -4 a
   
-ip dinamico:
-ethernets:
-  enp0s8:
-    dhcp4: true
-  ip statc:
+ip dinamico:<br/>
+ethernets:<br/>
+  enp0s8:<br/>
+    dhcp4: true<br/>
+  ip statc:<br/>
+  enp0s8:<br/>
+    dhcp4: false<br/>
+    addresses: [192.168.0.8/24]<br/>
+    gateway4: 192.168.0.1<br/>
+    nameseves:<br/>
+     addresses: [8.8.8.8,8.8.4.4]<br/>
   
   
   
